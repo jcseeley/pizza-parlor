@@ -60,3 +60,5 @@ Code: Pizza.prototype.toppingsPrice = function() {
   } 
 }  
 Expected Output: {size: 12, toppings: ["cheese", "pepperoni"], price: 14}
+
+## Refactored Tests

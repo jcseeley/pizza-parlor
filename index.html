@@ -13,11 +13,8 @@
 <body>
   <div class="container">
     <h1>Jase's Plant-Based Pizzeria</h1>
-    <h5>All pizza's include Good Planet Mozzarella!</h5>
-    <h6>1 topping +$2</h6>
-    <h6>2-5 toppings +$8</h6>
-    <h6>6-8 toppings +$12</h6>
     <form id="pizza-maker">
+      <h5>All pizza's include Good Planet Mozzarella!</h5>
       <h2>Create Your Pizza:</h2>
       <div class="form-select">
         <label for="size">
@@ -27,9 +24,13 @@
           <option>12"</option>
           <option>14"</option>
           <option>16"</option>
+          <option>18"</option>
+          <option>20"</option>
+          <option>24"</option>
         </select>
       </div>
       <h5>Select Toppings:</h5>
+      <h6>Each topping +$2</h6>
       <div class="form-check">
         <input class= "form-check-input" type="checkbox" value="pepperoni">
         <label class="form-check-label" for="pepperoni">Field Roast Pepperoni</label>
@@ -67,7 +68,7 @@
     </form>
     <div id="show-price">
       <h2 id="price"></h2>
-      <button class="btn-dark" id="reset">BUILD ANOTHER PIE?</button>
+      <button class="btn-dark" id="reset" onClick="window.location.reload();">BUILD ANOTHER PIE?</button>
     </div>
   </div>
 </body>
