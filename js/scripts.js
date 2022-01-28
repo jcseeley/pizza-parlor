@@ -25,7 +25,7 @@ $(document).ready(function() {
     newPizza.sizePrice();
     newPizza.toppingsPrice();
     $("#price").text("$" + newPizza.price);
-    $("#pizza-maker").hide();
+    //$("#pizza-maker").fadeOut();
     $("#show-price").fadeIn();
   })
 })
