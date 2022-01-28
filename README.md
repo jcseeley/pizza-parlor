@@ -23,8 +23,6 @@ A mock pizza parlor page. Choose a pizza size, select your toppings, and click s
 * Navigate to the top level of the directory.
 * Open the index.html file in your browser.
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
-
 ## Known Bugs
 
 * No known bugs at this time.
@@ -34,3 +32,9 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 MIT
 
 Copyright (c) 2022 Jase Seeley
+
+## Tests
+* Describe Pizza(size, toppings)  
+Test: "It should construct a pizza object with name and toppings properties."  
+Code: let pizza1 = new Pizza(16, "cheese");  
+Expected Output: {size: 16, toppings: "cheese"}
