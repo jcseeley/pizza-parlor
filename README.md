@@ -71,4 +71,10 @@ let pizza = new Pizza(12, 'cheese');
 pizza.sizePrice();  
 Expected Output: {size: 12, toppings: 'cheese', price: 12} 
   
-  
+* Describe: Pizza.prototype.toppingsPrice()  
+Test: "It should add $2 to the price for each topping."  
+Code: Pizza.prototype.toppingsPrice = function() {
+  this.price += this.toppings["length"] * 2
+}  
+let pizza = new Pizza(12, ['pepperoni'], 12)
+Expected Output: {size: 12, toppings: ['pepperoni'], price: 14}
