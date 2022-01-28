@@ -50,4 +50,4 @@ Code:  pizza1.sizePrice = function() {
     return this.price = 12;
   }
 }  
-Expected Output: {size: 12, toppings: "cheese", "pepperoni", price: 12}
+Expected Output: {size: 12, toppings: "cheese", "pepperoni", price: 12}  
