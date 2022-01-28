@@ -62,3 +62,11 @@ Code: Pizza.prototype.toppingsPrice = function() {
 Expected Output: {size: 12, toppings: ["cheese", "pepperoni"], price: 14}
 
 ## Refactored Tests
+* Describe: Pizza.prototype.sizePrice()   
+Test: "It should change the price property value to equal the size property value."  
+Code:  Pizza.prototype.sizePrice = function() {
+  this.price = this.size;
+}  
+let pizza = new Pizza(12, 'cheese');  
+pizza.sizePrice();  
+Expected Output: {size: 12, toppings: 'cheese', price: 12} 
