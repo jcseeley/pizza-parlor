@@ -70,3 +70,5 @@ Code:  Pizza.prototype.sizePrice = function() {
 let pizza = new Pizza(12, 'cheese');  
 pizza.sizePrice();  
 Expected Output: {size: 12, toppings: 'cheese', price: 12} 
+  
+  
