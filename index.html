@@ -12,12 +12,12 @@
 </head>
 <body>
   <div class="container">
-    <div id="hide">
-      <h1>Jase's Plant-Based Pizzeria</h1>
-      <h5>All pizza's include Good Planet Mozzarella!</h5>
-      <h6>1 topping +$2</h6>
-      <h6>2-5 toppings +$8</h6>
-      <h6>6-8 toppings +$12</h6>
+    <h1>Jase's Plant-Based Pizzeria</h1>
+    <h5>All pizza's include Good Planet Mozzarella!</h5>
+    <h6>1 topping +$2</h6>
+    <h6>2-5 toppings +$8</h6>
+    <h6>6-8 toppings +$12</h6>
+    <form id="pizza-maker">
       <h2>Create Your Pizza:</h2>
       <div class="form-select">
         <label for="size">
@@ -31,17 +31,43 @@
       </div>
       <h5>Select Toppings:</h5>
       <div class="form-check">
-        <input class= "form-check-input" type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+        <input class= "form-check-input" type="checkbox" value="pepperoni">
         <label class="form-check-label" for="pepperoni">Field Roast Pepperoni</label>
       </div>
       <div class="form-check">
-        <input class= "form-check-input" type="checkbox" id="sausage" name="sausage" value="sausage">
+        <input class= "form-check-input" type="checkbox" value=" sausage">
         <label class="form-check-label" for="sausage">Beyond Sausage Crumbles</label>
       </div>
       <div class="form-check">
-        <input class= "form-check-input" type="checkbox" id="bacon" name="bacon" value="bacon">
+        <input class= "form-check-input" type="checkbox" value=" bacon">
         <label class="form-check-label" for="bacon">All Vegetarian Inc Bacon</label>
       </div>
+      <div class="form-check">
+        <input class= "form-check-input" type="checkbox" value=" mushrooms">
+        <label class="form-check-label" for="mushrooms">Mushrooms</label>
+      </div>
+      <div class="form-check">
+        <input class= "form-check-input" type="checkbox" value=" red-peppers">
+        <label class="form-check-label" for="red-peppers">Red Peppers</label>
+      </div>
+      <div class="form-check">
+        <input class= "form-check-input" type="checkbox" value=" green-peppers">
+        <label class="form-check-label" for="green-peppers">Green Peppers</label>
+      </div>
+      <div class="form-check">
+        <input class= "form-check-input" type="checkbox" value=" eggplant">
+        <label class="form-check-label" for="eggplant">Eggplant</label>
+      </div>
+      <div class="form-check">
+        <input class= "form-check-input" type="checkbox" value=" artichoke">
+        <label class="form-check-label" for="artichoke">Artichoke</label>
+      </div>
+      <br>
+      <button type="submit" class="btn-dark">PRICE MY PIZZA!</button>
+    </form>
+    <div id="show-price">
+      <h2 id="price">$13</h2>
+      <button class="btn-dark" id="reset">BUILD ANOTHER PIE?</button>
     </div>
   </div>
 </body>

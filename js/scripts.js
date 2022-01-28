@@ -23,3 +23,13 @@ Pizza.prototype.toppingsPrice = function() {
     this.price += 12;
   } return this.price;
 }
+
+$(document).ready(function() {
+  $("form#pizza-maker").submit(function(event) {
+    event.preventDefault();
+    const pizzaSize = parseInt($("select#size").val());
+    const pizzaToppings = $("input[type=checkbox]:checked").map(function(_, el) {
+      return $(el).val();
+    }).get();
+  })
+})
