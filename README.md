@@ -34,7 +34,7 @@ MIT
 Copyright (c) 2022 Jase Seeley
 
 ## Tests
-* Describe Pizza(size, toppings, price)  
+* Describe: Pizza(size, toppings, price)  
 Test: "It should construct a pizza object with name, toppings, and price properties."  
 Code: let pizza1 = new Pizza(16, "cheese", 12);  
 Expected Output: {size: 16, toppings: "cheese", price: 12}  
@@ -43,11 +43,20 @@ Expected Output: {size: 16, toppings: "cheese", price: 12}
   Code: let pizza1 = new Pizza(12, ["cheese", "pepperoni"], 12);  
   Expected Output: {size: 12, toppings: ["cheese", "pepperoni"], price: 12}  
   
-* Describe Pizza.prototype.sizePrice()   
+* Describe: Pizza.prototype.sizePrice()   
 Test: "It should change the price property value to 12 if the pizza size is equal to 12."  
-Code:  pizza1.sizePrice = function() {
+Code:  Pizza.prototype.sizePrice = function() {
   if (this.size = 12) {
     this.price = 12;
   }
 }  
 Expected Output: {size: 12, toppings: "cheese", "pepperoni", price: 12}  
+  
+* Describe: Pizza.prototype.toppingsPrice()  
+Test: "It should add 2 to price property if pizza has two toppings."  
+Code: Pizza.prototype.toppingsPrice = function() {
+  if (this.toppings["length"] === 2) {
+    this.price += 2;
+  } 
+}  
+Expected Output: {size: 12, toppings: "cheese", "pepperoni", price: 14}
