@@ -17,9 +17,9 @@ Pizza.prototype.sizePrice = function() {
 Pizza.prototype.toppingsPrice = function() {
   if (this.toppings["length"] === 1) {
     this.price += 2;
-  } else if (this.toppings["length"] >= 2 && this.toppings <= 5) {
+  } else if ((this.toppings["length"] >= 2) && (this.toppings["length"] <= 5)) {
     this.price += 8;
-  } else if (this.toppings["length"] > 5 && this.toppings <= 8) {
+  } else if (this.toppings["length"] > 5 && this.toppings["length"] <= 8) {
     this.price += 12;
   } return this.price;
 }
@@ -31,5 +31,9 @@ $(document).ready(function() {
     const pizzaToppings = $("input[type=checkbox]:checked").map(function(_, el) {
       return $(el).val();
     }).get();
+    let newPizza = new Pizza(pizzaSize, pizzaToppings);
+    newPizza.sizePrice();
+    newPizza.toppingsPrice();
+    $("#price").text("$" + newPizza.price);
   })
 })
