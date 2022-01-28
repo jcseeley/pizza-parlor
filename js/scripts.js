@@ -15,9 +15,9 @@ Pizza.prototype.sizePrice = function() {
 }
 
 Pizza.prototype.toppingsPrice = function() {
-  if (this.toppings["length"] === 2) {
+  if (this.toppings["length"] === 1) {
     this.price += 2;
-  } else if (this.toppings["length"] > 2 && this.toppings <= 5) {
+  } else if (this.toppings["length"] >= 2 && this.toppings <= 5) {
     this.price += 8;
   } else if (this.toppings["length"] > 5 && this.toppings <= 8) {
     this.price += 12;

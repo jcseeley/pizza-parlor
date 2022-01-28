@@ -46,7 +46,7 @@ Expected Output: {size: 16, toppings: "cheese", price: 12}
 * Describe: Pizza.prototype.sizePrice()   
 Test: "It should change the price property value to 12 if the pizza size is equal to 12."  
 Code:  Pizza.prototype.sizePrice = function() {
-  if (this.size = 12) {
+  if (this.size === 12) {
     this.price = 12;
   }
 }  
@@ -59,4 +59,4 @@ Code: Pizza.prototype.toppingsPrice = function() {
     this.price += 2;
   } 
 }  
-Expected Output: {size: 12, toppings: "cheese", "pepperoni", price: 14}
+Expected Output: {size: 12, toppings: ["cheese", "pepperoni"], price: 14}
