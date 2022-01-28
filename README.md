@@ -39,6 +39,13 @@ Test: "It should construct a pizza object with name and toppings properties."
 Code: let pizza1 = new Pizza(16, "cheese");  
 Expected Output: {size: 16, toppings: "cheese"}  
   
-Test: "It should add multiple values to toppings property."  
-Code: let pizza1 = new Pizza(12, ["cheese", "pepperoni"]);  
-Expected Output: {size: 12, toppings: ["cheese", "pepperoni"]}
+  Test: "It should add multiple values to toppings property."  
+  Code: let pizza1 = new Pizza(12, ["cheese", "pepperoni"]);  
+  Expected Output: {size: 12, toppings: ["cheese", "pepperoni"]}  
+  
+* Describe Pizza.prototype.addSize = function(pizzaSize) {
+    this.size = pizzaSize;
+  }  
+  Test: "It should change pizza1 size to 14."  
+  Code: pizza1.addSize(14);  
+  Expected Output: {size: 14}
