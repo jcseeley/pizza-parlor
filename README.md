@@ -37,4 +37,8 @@ Copyright (c) 2022 Jase Seeley
 * Describe Pizza(size, toppings)  
 Test: "It should construct a pizza object with name and toppings properties."  
 Code: let pizza1 = new Pizza(16, "cheese");  
-Expected Output: {size: 16, toppings: "cheese"}
+Expected Output: {size: 16, toppings: "cheese"}  
+  
+Test: "It should add multiple values to toppings property."  
+Code: let pizza1 = new Pizza(12, ["cheese", "pepperoni"]);  
+Expected Output: {size: 12, toppings: ["cheese", "pepperoni"]}
