@@ -16,13 +16,13 @@ Pizza.prototype.toppingsPrice = function() {
 }
 
 Pizza.prototype.crustPrice = function() {
-  if (this.crust === 'garlicHerb') {
+  if (this.crust === 'Garlic-&-Herb') {
   this.price += 2;
-  } else if (this.crust === 'glutenFree') {
+  } else if (this.crust === 'Gluten-Free') {
   this.price += 3;
-  } else if (this.crust === 'pan') {
+  } else if (this.crust === 'Pan') {
   this.price += 4;
-  } else if (this.crust === 'stuffed') {
+  } else if (this.crust === 'Stuffed') {
   this.price += 5;
   }
 }
@@ -41,6 +41,7 @@ $(document).ready(function() {
     newPizza.crustPrice();
     $("#price").text("Price: " + "$" + newPizza.price);
     $("#your-size").text("Pizza size: " + newPizza.size + '"');
+    $("#your-crust").text("Crust: " + newPizza.crust);
     $("#your-toppings").text(newPizza.toppings);
     $("#pizza-maker").fadeOut();
     $("#show-price").fadeIn();

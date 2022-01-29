@@ -13,7 +13,7 @@ h2 {
 
 body {
   background-image: url("../img/pizzafire.jpg");
-  color: red;
+  color:darkorange;
   font-family: SymItalic;
   font-size: large;
 }
@@ -22,4 +22,3 @@ body {
   text-align: center;
   text-decoration: underline;
 }
-

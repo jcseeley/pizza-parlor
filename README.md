@@ -14,7 +14,7 @@
 
 ## Description
 
-A mock pizza parlor page. Choose a pizza size, select your toppings, and click submit to see the price. 
+A mock pizza parlor page. Choose a pizza size, pick a crust, select your toppings, and click submit to see the price. 
 
 ## Setup/Installation Requirements
 
