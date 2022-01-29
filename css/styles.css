@@ -2,9 +2,19 @@
   display: none;
 }
 
+@font-face {
+  font-family: FerroRosso;
+  src: url(/css/FerroRosso.ttf);
+}
+
 body {
-  background-image: url("../img/pizzashop.jpg");
-  background-size: ;
-  background-repeat: no-repeat;
+  background-image: url("../img/pizzafire.jpg");
+  color: darkgrey;
+  font-family: FerroRosso;
+  font-size: x-large;
+}
+
+#title {
+  text-align: center;
 }
 
