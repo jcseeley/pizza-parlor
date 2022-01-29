@@ -14,6 +14,10 @@ Pizza.prototype.toppingsPrice = function() {
   return this.price;
 }
 
+function displayToppingDetails() {
+
+}
+
 $(document).ready(function() {
   $("form#pizza-maker").submit(function(event) {
     event.preventDefault();
@@ -25,7 +29,9 @@ $(document).ready(function() {
     newPizza.sizePrice();
     newPizza.toppingsPrice();
     $("#price").text("$" + newPizza.price);
-    //$("#pizza-maker").fadeOut();
+    $("#size").html(newPizza.size + '"');
+    console.log(newPizza.size + '"');
+    $("#pizza-maker").fadeOut();
     $("#show-price").fadeIn();
   })
 })

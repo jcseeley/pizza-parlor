@@ -3,18 +3,19 @@
 }
 
 @font-face {
-  font-family: FerroRosso;
-  src: url(/css/FerroRosso.ttf);
+  font-family: SymItalic;
+  src: url(/css/Symbol\ Bold\ Italic.ttf);
 }
 
 body {
   background-image: url("../img/pizzafire.jpg");
-  color: darkgrey;
-  font-family: FerroRosso;
-  font-size: x-large;
+  color: red;
+  font-family: SymItalic;
+  font-size: large;
 }
 
 #title {
   text-align: center;
+  text-decoration: underline;
 }
 
