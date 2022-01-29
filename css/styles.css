@@ -1,6 +1,10 @@
 @font-face {
   font-family: SymItalic;
-  src: url(/css/Symbol\ Bold\ Italic.ttf);
+<<<<<<< HEAD
+  src: url(/css/SymbolBoldItalic.ttf);
+=======
+  src: url(/css/SymbolBoldItalic.ttf);
+>>>>>>> 36cc28fb8fae8e7fae4a793091408a8d8bffb7db
 }
 
 #show-price {
