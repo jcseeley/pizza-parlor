@@ -33,6 +33,19 @@
               <option>24"</option>
             </select>
           </div>
+          <div class="form-select">
+            <label for="crust">
+              <h5>Select Crust:</h5>
+            </label>
+            <select for="crust" id="crust">
+              <option value="original">Original</option>
+              <option value="wheat">Wheat</option>
+              <option value="glutenFree">Gluten Free</option>
+              <option value="garlicHerb">Garlic & Herb</option>
+              <option value="pan">Pan</option>
+              <option value="stuffed">Stuffed</option>
+            </select>
+          </div>
           <h5>Select Toppings:</h5>
           <h6>Each topping +$2</h6>
           <div class="form-check">
@@ -48,6 +61,10 @@
             <label class="form-check-label" for="bacon">All Vegetarian Inc Bacon</label>
           </div>
           <div class="form-check">
+            <input class= "form-check-input" type="checkbox" value=" ham">
+            <label class="form-check-label" for="ham">Tofurkey Ham</label>
+          </div>
+          <div class="form-check">
             <input class= "form-check-input" type="checkbox" value=" mushrooms">
             <label class="form-check-label" for="mushrooms">Mushrooms</label>
           </div>
@@ -60,19 +77,43 @@
             <label class="form-check-label" for="green-peppers">Green Peppers</label>
           </div>
           <div class="form-check">
+            <input class= "form-check-input" type="checkbox" value=" banana-peppers">
+            <label class="form-check-label" for="banana-peppers">Banana Peppers</label>
+          </div>
+          <div class="form-check">
             <input class= "form-check-input" type="checkbox" value=" eggplant">
             <label class="form-check-label" for="eggplant">Eggplant</label>
           </div>
           <div class="form-check">
-            <input class= "form-check-input" type="checkbox" value=" artichoke">
-            <label class="form-check-label" for="artichoke">Artichoke</label>
+            <input class= "form-check-input" type="checkbox" value=" artichokes">
+            <label class="form-check-label" for="artichokes">Artichokes</label>
+          </div>
+          <div class="form-check">
+            <input class= "form-check-input" type="checkbox" value=" onion">
+            <label class="form-check-label" for="onion">Onion</label>
+          </div>
+          <div class="form-check">
+            <input class= "form-check-input" type="checkbox" value=" pineapple">
+            <label class="form-check-label" for="pineapple">Pineapple</label>
+          </div>
+          <div class="form-check">
+            <input class= "form-check-input" type="checkbox" value=" broccoli">
+            <label class="form-check-label" for="broccoli">Broccoli</label>
+          </div>
+          <div class="form-check">
+            <input class= "form-check-input" type="checkbox" value=" banana-peppers">
+            <label class="form-check-label" for="banana-peppers">Banana Peppers</label>
           </div>
           <br>
           <button type="submit" class="btn-dark">Price my pizza!</button>
         </form>
       </div>
       <div class="col-6" id="show-price">
-        <h2 id="price"></h2>
+        <h2>Your choices:</h2>
+        <h4 id="your-size"></h4>
+        <h4>Toppings:</h4>
+        <p id="your-toppings"></p>
+        <h3 id="price"></h3>
         <button class="btn-dark" id="reset" onClick="window.location.reload();">Build Another?</button>
       </div>
     </div>

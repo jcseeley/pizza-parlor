@@ -1,10 +1,14 @@
+@font-face {
+  font-family: SymItalic;
+  src: url(/css/Symbol\ Bold\ Italic.ttf);
+}
+
 #show-price {
   display: none;
 }
 
-@font-face {
-  font-family: SymItalic;
-  src: url(/css/Symbol\ Bold\ Italic.ttf);
+h2 {
+  text-decoration: underline;
 }
 
 body {
