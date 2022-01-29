@@ -53,7 +53,7 @@ Code:  Pizza.prototype.sizePrice = function() {
 Expected Output: {size: 12, toppings: "cheese", "pepperoni", price: 12}  
   
 * Describe: Pizza.prototype.toppingsPrice()  
-Test: "It should add 2 to price property if pizza has two toppings."  
+Test: "It should add 2 to price property value if pizza has two toppings."  
 Code: Pizza.prototype.toppingsPrice = function() {
   if (this.toppings["length"] === 2) {
     this.price += 2;
@@ -61,7 +61,15 @@ Code: Pizza.prototype.toppingsPrice = function() {
 }  
 Expected Output: {size: 12, toppings: ["cheese", "pepperoni"], price: 14}
 
-* Describe Pizza.prototype.crustPrice()
+* Describe Pizza.prototype.crustPrice()  
+Test: "It should add 2 to price property value if crust is gluten free."  
+Code: Pizza.prototype.crustPrice = function() {
+    if (this.crust === 'glutenFree') {
+    this.price += 2;
+    } 
+}  
+Expected Output: {size 12, ['pepperoni'], 'garlicHerb', 2}
+
 
 ## Refactored Tests
 * Describe: Pizza.prototype.sizePrice()   
