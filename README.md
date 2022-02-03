@@ -62,13 +62,44 @@ Code: Pizza.prototype.toppingsPrice = function() {
 Expected Output: {size: 12, toppings: ["cheese", "pepperoni"], price: 14}
 
 * Describe Pizza.prototype.crustPrice()  
-Test: "It should add 2 to price property value if crust is gluten free."  
+  Test: "It should add 2 to price property value if crust is garlic & herb."  
 Code: Pizza.prototype.crustPrice = function() {
-    if (this.crust === 'glutenFree') {
+    if (this.crust === 'Garlic-&-Herb') {
     this.price += 2;
     } 
 }  
-Expected Output: {size 12, ['pepperoni'], 'garlicHerb', 2}
+Expected Output: {size 12, ['pepperoni'], 'Garlic-&-Herb', 2}
+    
+    Test: "It should add 3 to price property value if crust is gluten free."  
+Code: Pizza.prototype.crustPrice = function() {
+    else if (this.crust === 'Gluten-Free') {
+    this.price += 3;
+    }}  
+Expected Output: {size 12, ['pepperoni'], 'Gluten-Free', 3}  
+  
+  Test: "It should add 4 to price property value if crust is pan."  
+Code: Pizza.prototype.crustPrice = function() {
+    else if (this.crust === 'Pan') {
+    this.price += 4;
+    } 
+}  
+Expected Output: {size 12, ['pepperoni'], 'Pan', 4}  
+  
+  Test: "It should add 5 to price property value if crust is stuffed."  
+Code: Pizza.prototype.crustPrice = function() {
+    else if (this.crust === 'Stuffed') {
+    this.price += 5;
+    } 
+}  
+Expected Output: {size 12, ['pepperoni'], 'Stuffed', 5}  
+  
+  Test: "It should add 0 to price property value if crust is original or wheat."  
+Code: Pizza.prototype.crustPrice = function() {
+    else {
+    this.price += 0;
+    } 
+}  
+Expected Output: {size 12, ['pepperoni'], 'Original', 0}
 
 
 ## Refactored Tests
