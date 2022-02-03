@@ -1,29 +1,29 @@
-function Pizza(size, toppings, crust, price) {
+function Pizza(size, toppings, crust) {
   this.size = size;
   this.toppings = toppings;
   this.crust = crust;
-  this.price = price;
+  this.price = 0;
 }
 
 Pizza.prototype.sizePrice = function() {
   this.price = this.size;
-  return this.price;
 }
 
 Pizza.prototype.toppingsPrice = function() {
   this.price += this.toppings["length"] * 2;
-  return this.price;
 }
 
 Pizza.prototype.crustPrice = function() {
   if (this.crust === 'Garlic-&-Herb') {
-  this.price += 2;
+    this.price += 2;
   } else if (this.crust === 'Gluten-Free') {
-  this.price += 3;
+    this.price += 3;
   } else if (this.crust === 'Pan') {
-  this.price += 4;
+    this.price += 4;
   } else if (this.crust === 'Stuffed') {
-  this.price += 5;
+    this.price += 5;
+  } else {
+    this.price += 0;
   }
 }
 
