@@ -2,7 +2,8 @@
 
 #### By Jase Seeley
 
-#### Create your own pizza and see the price.
+#### Epicodus Week #4 Independent Code Review: Object-Orientated JavaScript  
+Create your own pizza and see the price.
 
 ## Technologies Used
 
